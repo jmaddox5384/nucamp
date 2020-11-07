@@ -13,7 +13,7 @@ export const Comments = (state = { errMess: null, comments: []}, action) => {
             const comment = action.payload;
          
             return {...state, comments: state.comments.concat(comment)};
-
+            
         default:
             return state;
     }
